@@ -12,7 +12,7 @@ cd /analog-clock-react
 npm start
 ```
 
-[Open](http://localhost:3000) Or Open your browser and write (http://localhost:3000)
+[Open](http://localhost:3000) Or Open your browser and write http://localhost:3000
 
 ## Resources
 
