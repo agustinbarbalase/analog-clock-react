@@ -1,0 +1,62 @@
+.hour-content-marker {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 4em;
+  height: 4em;
+}
+
+.minute-content-marker {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 6em;
+  height: 6em;
+}
+
+.second-content-marker {
+  z-index: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 8em;
+  height: 8em;
+}
+
+.hour-marker {
+  width: 0.3em;
+  height: 2em;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 0.25em;
+}
+
+.minute-marker {
+  width: 0.25em;
+  height: 3em;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 0.25em;
+}
+
+.second-marker {
+  width: 0.1em;
+  height: 4em;
+  background-color: #ff0000;
+  margin: auto;
+  border-radius: 0.25em;
+}

@@ -1,23 +1,57 @@
-# Project Description
+# analog-clock-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
-
-In the project directory, you must run:
-
-```
-git clone https://github.com/AgusBarba03/analog-clock-react.git
-cd /analog-clock-react
-npm start
-```
-
-[Open](http://localhost:3000) Or Open your browser and write http://localhost:3000
+A simple web application with an analog clock on the home page. The clock returns the current time and updates it every second. Below is the date and time in digital format.
 
 ## Resources
 
-[Clock.png](https://drive.google.com/file/d/1DBybco2DjKd4elgxZcJ8-zMRUF0ndIHW/view)
+* [Clock.png](https://drive.google.com/file/d/1DBybco2DjKd4elgxZcJ8-zMRUF0ndIHW/view)
 
-## Deploy in Heroku's Server
+## Configuration instructions
 
-[Click Here](https://analog-clock-react.herokuapp.com/)
+This app has been developed with [create-react-app](https://github.com/facebook/create-react-app)
+
+### Build production
+
+```shell
+git clone https://github.com/agustinbarbalase/weather-app.git
+npm install
+npm build
+```
+
+### Dev
+
+```shell
+git clone https://github.com/agustinbarbalase/weather-app.git
+npm install
+npm start
+```
+
+## Deploy on Vercel
+
+This application was deployed in Vercel with Github actions. Here is the action and [here](https://analog-clock-react-eta.vercel.app/) is the deployment page
+
+```yml
+name: Deploy on Vercel
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+```
+
+## License
+
+This app has a [MIT License](https://opensource.org/licenses/MIT)
